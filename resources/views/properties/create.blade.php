@@ -41,12 +41,12 @@
                       
 
                         <div class="form-group row">
-                            <label for="properyDescription" class="col-md-4 col-form-label text-md-right">Código del Cliente / C.C.</label>
+                            <label for="propertyDescription" class="col-md-4 col-form-label text-md-right">Código del Cliente / C.C.</label>
 
                             <div class="col-md-6">
-                                <input id="properyDescription" type="properyDescription" class="form-control @error('properyDescription') is-invalid @enderror" name="properyDescription" value="{{ old('properyDescription') }}" required autocomplete="properyDescription">
+                                <input id="propertyDescription" type="propertyDescription" class="form-control @error('propertyDescription') is-invalid @enderror" name="propertyDescription" value="{{ old('propertyDescription') }}" required autocomplete="propertyDescription">
 
-                                @error('properyDescription')
+                                @error('propertyDescription')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

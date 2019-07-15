@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class PropertyController extends Controller
 {
     public function __construct()
@@ -20,17 +21,15 @@ class PropertyController extends Controller
     public function store(){
 
          $data = request()-> validate([
-            'propertyTitle' => 'required|unique:properties|max:100|String',  
-            'name' => 'required|max:100|String',
-            'properyDescription' => 'required|unique:properties|max:250|String',
+            'propertyDescription' => 'required|unique:properties|max:250|String',
             'projectName' => 'required|max:60|String',
             'address' => 'required|max:60|String',
             'priceProperty' => 'required|Integer',
         ]);
         
-        \App\Property::create($data);
+        \App\Property::create($data); // save in the data base
         
-        dd($data);
+        //dd($data);
 
     }
 }

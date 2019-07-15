@@ -27,3 +27,8 @@ Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 //Property Actions and endpoints
 Route::get('/property', 'PropertyController@create');
 Route::post('/property', 'PropertyController@store');
+
+
+//Payments Actions and endpoints
+Route::get('/payments', 'PaymentController@create');
+Route::post('/payments', 'PaymentController@store');
