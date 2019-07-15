@@ -18,7 +18,6 @@ class CreatePropertiesTable extends Migration
             // pero un vendedor puede tener muchas propiedades.
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');  // FK un usuario tien un perfil, un perfil corresponde a un usuario.
-            $table->string('propertyTitle');        // Titulo de projecto.
             $table->string('propertyDescription');  // descripcion propiedad.
             $table->string('projectName');          //Proyecto Inmobiliario.
             $table->string('address');              // ubicacion del proyecto

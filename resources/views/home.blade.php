@@ -24,11 +24,11 @@
         <div class="col-9 pt-1 ">
 
             <div class= "d-flex">
-                <div class="pr-5"> <strong>Vista general </strong> </div>
-                <div class="pr-5"> <strong>Registrar venta </strong> </div>
-                <div class="pr-5"> <strong>Registrar pago</strong> </div>
-                <div class="pr-5"> <strong>Estado de cuentas </strong> </div>
-                <div class="pr-5"> <strong>Reportes y estadísticas </strong> </div>
+        
+                <div class="pr-5"> <a href="{{ url('/home') }}">Vista general</a>  </div>
+                <div class="pr-5"> <a href="{{ url('/property') }}">Registrar venta</a>  </div>
+                <div class="pr-5"> <a href="{{ url('/payments') }}">Registrar pago</a>  </div>
+                <div class="pr-5"> <a href="{{ url('/home') }}">Estado de cuentas </a>  </li>
         
             </div>
 

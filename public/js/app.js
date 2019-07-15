@@ -49507,8 +49507,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /mnt/d/Meliii/PropiedadRaiz/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /mnt/d/Meliii/PropiedadRaiz/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/melii/Documents/LaravelPropiedadRaiz-master/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/melii/Documents/LaravelPropiedadRaiz-master/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
