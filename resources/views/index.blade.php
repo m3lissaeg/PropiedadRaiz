@@ -419,7 +419,7 @@
               <h3 class="block-title">¡Contáctame!</h3>
 
               <ul class="contact-footer">
-                  <li> <strong> Ciudad :</strong> <span>Pereira, Rsaralda, Colombia.</span> </li>
+                  <li> <strong> Ciudad :</strong> <span>Pereira, Risaralda, Colombia.</span> </li>
               </ul>
               
               <ul class="footer-social">

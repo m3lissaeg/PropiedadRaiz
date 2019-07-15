@@ -6,7 +6,7 @@
             <div class="card">
                 <div class="card-header">Registrar pago</div>
                 <div class="card-body">
-                    <form method="POST" action="/property" enctype="multipart/form-data">
+                    <form method="POST" action="/payments" enctype="multipart/form-data">
                         @csrf
 
 
@@ -57,12 +57,12 @@
                         
 
                         <div class="form-group row">
-                            <label for="priceProperty" class="col-md-4 col-form-label text-md-right">Pago/ adelanto comisións $</label>
+                            <label for="comision" class="col-md-4 col-form-label text-md-right">Pago/ adelanto comisións $</label>
 
                             <div class="col-md-6">
-                                <input id="priceProperty" type="number" class="form-control @error('priceProperty') is-invalid @enderror" name="priceProperty" value="{{ old('priceProperty') }}" required autocomplete="priceProperty">
+                                <input id="comision" type="number" class="form-control @error('comision') is-invalid @enderror" name="comision" value="{{ old('comision') }}" required autocomplete="comision">
 
-                                @error('priceProperty')
+                                @error('comision')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -73,7 +73,7 @@
                         <div class="form-group row mb-0 text-center">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Registrar propiedad') }}
+                                    {{ __('Registrar pago') }}
                                 </button>
                             </div>
                         </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 
+
 class PropertyController extends Controller
 {
     public function __construct()
@@ -26,10 +27,31 @@ class PropertyController extends Controller
             'address' => 'required|max:60|String',
             'priceProperty' => 'required|Integer',
         ]);
+
+        $property = new \App\Property();
+        $property->propertyDescription = request('propertyDescription');
+        $property->projectName = request('projectName');
+        $property->address = request('address');
+        $property->priceProperty = request('priceProperty');
+        $property->user_id = auth()->user()->id;
+        // dd($property);
         
-        \App\Property::create($data); // save in the data base
+        $property->save();
+
+
+        return redirect('/home');
+
         
-        //dd($data);
+        
+
+
+ 
+
+        // \App\Property::create($data); // save in the data base
+
+
+        
+        //dd($data);  this let me watch the register in the web server
 
     }
 }
